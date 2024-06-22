@@ -28,7 +28,7 @@
     background-color: #a8dadc;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     row-gap: 40px;
     
 }
@@ -39,6 +39,9 @@
     height: 10em;
     border-radius: 50%;
     background-color: #e63946;
+    justify-content: center;
+    align-items: center;
+    color: #f1faee;
     
 }
 .tags {
@@ -47,7 +50,7 @@
     align-items: center;
     flex-wrap: wrap;
     row-gap: 10px;
-    column-gap: 10px;
+    column-gap: 11px;
 }
 .btn {
     display: flex;
@@ -76,7 +79,6 @@
     width: 100%;
     height: 100%;
     font-size: large;
-    /* border-style: none; */
     border-radius: 0px;
 }
 /*--The list of emails--------------------*/
@@ -85,6 +87,7 @@
     height: 53%;
     background-color: #457b9d;
     flex-direction: column;
+    align-items: flex-start;
 }
 .emailtab {
     display: flex;
@@ -93,18 +96,25 @@
     border-color: #f1faee; 
     border-style: solid;
     flex-direction: row;
+    width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+
     color: #f1faee;
     column-gap: 10px;
+    
     /* flex-direction: space-around; */
 }
 .emailtabicon {
     border-radius: 50%;
     width: 4.5em;
     height: 4.5em;
-    row-gap: 10px;  
     background-color: green;
+    display: flex;
+    margin-left: 1em;
+    margin-right: 1em;
+    justify-content: center;
+    align-items: center;
     
 }
 .emailtabtext {
@@ -113,10 +123,11 @@
     flex-direction: column;
     column-gap: 10px;
 
+
 }
 .emailtabemail {
     font-size: calc(1em + .3vw);
-
+    word-wrap: break-word;
 
 }
 .emailtabsubject {
@@ -153,6 +164,7 @@
     color: #f1faee;
 }
 .emailtext {
+    all:revert;
     flex-grow: .8;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -162,14 +174,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0em .2em 0em .2em;
+    padding: 0em 1em 0em 1em;
 }
 /*--Email reply text box-----------------*/
 .emailreplyarea {
     all: revert;
     display: flex;
     flex-grow: 0.8;
-    
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.emailreplybox {
+    padding: 0em .2em 0em .2em;
+    width: 60%;
+    height: 40%;
+    /* background-color:  */
 }
 /*--Buttons under text box---------------*/
 .emailresponsebuttons {
@@ -179,5 +199,13 @@
     justify-content: center;
     align-items: center;
     padding: 0em .2em .2em .2em;
-    
+}
+
+
+
+/*Just for h1s*/
+h1 {
+    all: revert; 
+    font-size: 2em; 
+    font-weight: lighter;
 }
