@@ -1,0 +1,183 @@
+
+
+.container-fluid {
+    height: 100vh;
+    background-color: #f1faee;
+    --bs-gutter-x: 0rem;
+}
+.row {
+    height: 100vh;
+}
+
+/* Apparently non-bootsrap classes must be last in div tag*/
+
+
+/*---------------------------------------------------*/
+/*--The panel on the left, or the center if size sm--*/
+/*---------------------------------------------------*/
+.horiznavbar {
+    display: flex;
+    flex-direction: column;
+    
+}
+/*-- The icon and filters-----------------*/
+.mainnavinterface {
+    display: flex;
+    flex-direction :column;
+    height: 40%;
+    background-color: #a8dadc;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    
+}
+.icon {
+    display: flex;
+    aspect-ratio: 1/1;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    background-color: #e63946;
+    
+}
+.tags {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.tagbtn {
+    width: 30%;
+}
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+/*--Searchbar-----------------------------*/
+.searchbar {
+    height: 7%;
+    background-color: #f1faee;
+}
+.search {
+    width: 100%;
+    height: 100%;
+    font-size: large;
+    /* border-style: none; */
+    border-radius: 0px;
+}
+/*--The list of emails--------------------*/
+.emaillist {
+    display: flex;
+    height: 53%;
+    background-color: #457b9d;
+    flex-direction: column;
+}
+.emailtab {
+    display: flex;
+    flex-grow: 1;
+    border-width: 1px 0px 1px 0px;
+    border-color: #f1faee; 
+    border-style: solid;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #f1faee;
+    column-gap: 10px;
+    /* flex-direction: space-around; */
+}
+.emailtabicon {
+    border-radius: 50%;
+    width: 4.5em;
+    height: 4.5em;
+    row-gap: 10px;  
+    background-color: green;
+    
+}
+.emailtabtext {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+
+}
+.emailtabemail {
+    font-size: calc(1em + .3vw);
+
+
+}
+.emailtabsubject {
+    font-size: calc(.7em + .3vw);
+} 
+
+
+
+
+
+/*---------------------------------------------------*/
+/*--Email View Panel---------------------------------*/
+/*---------------------------------------------------*/
+.emailviewer {
+    display: flex;
+    flex-direction: column;
+
+}
+/*--Email message display and header------*/
+.emailmessagearea {
+    display: flex;
+    flex-grow: .6;
+    flex-direction: column;
+}
+.emailtitle {
+    flex-grow: 0.15;
+    display: flex;
+    background: #1D3557;
+    justify-content: center;
+    align-items: center;
+}
+.titletext {
+    font-size: 2.5em;
+    color: #f1faee;
+}
+.emailtext {
+    flex-grow: .8;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: #1D3557;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0em .2em 0em .2em;
+}
+/*--Email reply text box-----------------*/
+.emailreplyarea {
+    all: revert;
+    display: flex;
+    flex-grow: 0.8;
+    
+}
+/*--Buttons under text box---------------*/
+.emailresponsebuttons {
+    display: flex;
+    flex-grow: .2;
+    column-gap: 5em;
+    justify-content: center;
+    align-items: center;
+    padding: 0em .2em .2em .2em;
+    
+}
